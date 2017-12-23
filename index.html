@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Cache-control" content="public">
+    <!-- <meta http-equiv="Cache-control" content="public"> -->
+    <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+      Header set Cache-Control "max-age=604800, public"
+    </FilesMatch>
     <meta name="description" content=" FILL ME IN ">
     <meta name="author" content=" FILL ME IN ">
     <title>Michael Creel: Portfolio</title>
